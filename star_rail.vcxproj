@@ -135,10 +135,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MinHook.h" />
-    <ClInclude Include="typedefs.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Library Include="libMinHook-x64-v141-mt.lib" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
