@@ -48,7 +48,7 @@ BOOL DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)
 		{
 			printf("MH_CreateHookApiEx error\n");
 
-			return 1;
+			return FALSE;
 		}
 
 		if (MH_EnableHook(t_CreateFileW) != MH_OK)
