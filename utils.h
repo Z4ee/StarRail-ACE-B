@@ -17,6 +17,6 @@ namespace utils {
 		return *reinterpret_cast<K*>(address);
 	}
 
-	/*void suspend_other_threads();
-	void resume_other_threads();*/
+	void suspend_other_threads();
+	void resume_other_threads();
 }
