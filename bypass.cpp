@@ -16,7 +16,7 @@ namespace bypass {
 		checksum ^= utils::read<uint64_t>(base_address + LDR_LOAD_DLL);
 		checksum ^= utils::read<uint64_t>(base_address + CHEAT_ENGINE);
 
-		if (checksum != 0x7560DA25ull && checksum != 0x7522E800ull) {
+		if (checksum < 0x75000000ull || checksum > 0x76000000ull) {
 			printf("Unsupported SRB version -> 0x%I64X\n", checksum);
 			return FALSE;
 		}
@@ -32,6 +32,7 @@ namespace bypass {
 
 		if (check()) {
 			utils::write<uint64_t>(base_address + LDR_LOAD_DLL, 0xCCCCC300000000B8ull); // bypass for dll injections (speedhack in cheat engine / debuggers)
+			utils::write<uint8_t>(base_address + LDR_LOAD_DLL + 9, 0xC3); // bypass for dll injections (speedhack in cheat engine / debuggers)
 			utils::write<uint8_t>(base_address + CHEAT_ENGINE, 0xC3); // bypass for cheat engine
 		}
 		else {
