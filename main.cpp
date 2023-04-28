@@ -2,7 +2,6 @@
 
 #include <iostream>
 #include <windows.h>
-#include <TlHelp32.h>
 
 #include "MinHook.h"
 
