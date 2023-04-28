@@ -19,9 +19,4 @@
       <Filter>Исходные файлы</Filter>
     </ClInclude>
   </ItemGroup>
-  <ItemGroup>
-    <Library Include="libMinHook-x64-v141-mt.lib">
-      <Filter>Исходные файлы</Filter>
-    </Library>
-  </ItemGroup>
 </Project>
