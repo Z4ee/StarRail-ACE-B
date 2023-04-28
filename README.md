@@ -1,5 +1,5 @@
 # Honkai Star Rail | ACE (AntiCheatExpert) bypass
-This repository provides code and instructions for bypassing the anti-cheat system in Honkai Star Rail game, allowing players to open Cheat Engine. For informational purposes only. Use at your own risk.
+This repository provides code for bypassing the anti-cheat system in Honkai Star Rail game, allowing players to open Cheat Engine. For informational purposes only. Use at your own risk.
 
 # Instruction
 What you need to compile:
