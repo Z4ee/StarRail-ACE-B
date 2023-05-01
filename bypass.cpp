@@ -33,6 +33,7 @@ namespace bypass {
 		if (check()) {
 			utils::write<uint64_t>(base_address + LDR_LOAD_DLL, 0xCCCCC300000000B8ull); // bypass for dll injections (speedhack in cheat engine / debuggers)
 			utils::write<uint8_t>(base_address + CHEAT_ENGINE, 0xC3); // bypass for cheat engine
+			utils::write<uint16_t>(base_address + 0x1BCBA0, 0xFEEB); // bypass for detect debugger attach
 		}
 		else {
 			printf("Failed to init bypass\n");
